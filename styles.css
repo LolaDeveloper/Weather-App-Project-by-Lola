@@ -4,7 +4,12 @@ body {
 
 h1 {
   color: gray;
+  font-weight: 100;
+  margin-bottom: 0;
+  font-size: 30px;
+  line-height: 2;
 }
+
 h2 {
   color: #972fa7;
   font-weight: bold;
@@ -15,29 +20,38 @@ h3 {
   font-size: 18px;
   font-weight: bold;
 }
+ul {
+  margin: 0;
+  padding: 0;
+}
 
-.container {
-  margin: 0 auto;
-  border: 2px solid gray;
-  margin-top: 30px;
-  box-shadow: 0 2px 2px 0 rgb(0 0 0 / 16%), 0 0 0 1px rgb(0 0 0 / 8%);
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: #972fa7;
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 19px;
+}
+
+.weather-app-wrapper {
   max-width: 600px;
-  padding: 20px 16px 24px;
-  background-color: #dcdbfe;
+  margin: 30px auto;
 }
 
 .weather-app {
   border: 2px solid #972fa7;
-  padding: 15px;
-  margin: 20px auto;
+  padding: 20px;
   border-radius: 10px;
-  max-width: 600px;
+  background-color: #dcdbfe;
 }
 
 button.btn-secondary {
   background: #972fa7;
   border-color: gray;
 }
+
 button.btn-secondary:hover {
   background: gray;
   border-color: #972fa7;
@@ -47,62 +61,14 @@ button.btn-secondary:focus {
   border-color: gray;
 }
 
-.today-temperature {
-  font-size: 30px;
-  text-align: left;
-  line-height: 1;
-}
-.quoteRainbow {
-  position: relative;
-  margin: 0 auto;
-  width: 100px;
-  left: 100px;
-  top: -40px;
-}
-#rainbow {
-  display: block;
-  width: 200%;
-}
-.newIcon {
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 80%;
-  transform: translate(-50%, -50%);
-  text-align: left;
-  background: rgb(0 0 0 / 47%);
-  backdrop-filter: brightness(0.5);
-  padding: 15px;
-  width: max-content;
-  cursor: pointer;
-  border-radius: 0.25rem;
-}
-.newIcon:hover {
-  opacity: 1;
-  transition: all 400ms ease-in-out;
-}
-
-.rainbowText {
-  color: white;
-  margin: 0 auto;
-  font-size: 15px;
-}
-.mb-5 {
-  margin-bottom: 3rem !important;
-  position: relative;
-  top: -130px;
-}
 .units {
   position: relative;
-  top: -10px;
-  right: 5px;
+  right: 15px;
   font-size: smaller;
+  font-size: 16px;
+  top: -34px;
 }
-.col-4 {
-  flex: 0 0 auto;
-  width: 33.3333333333%;
-  margin-bottom: -250px;
-}
+
 .weather-icon {
   color: black;
   font-size: 18px;
@@ -110,8 +76,9 @@ button.btn-secondary:focus {
 
 .temp {
   color: black;
-  font-size: 30px;
+  font-size: 64px;
   line-height: 1;
+  font-weight: 400;
 }
 
 a:link {
@@ -120,37 +87,4 @@ a:link {
 a:hover {
   color: #972fa7;
   font-weight: bold;
-}
-
-.week-days {
-  text-align: center;
-  line-height: 0.5cm;
-  position: relative;
-  left: 40px;
-}
-
-.weather-emoji {
-  color: gray;
-  font-size: 25px;
-  font-weight: bold;
-  display: block;
-  position: relative;
-  left: 65px;
-}
-.temperature {
-  color: #972fa7;
-  font: size 15px;
-  font-weight: bold;
-  position: relative;
-  right: 32px;
-  font-size: 20px;
-}
-
-footer {
-  position: absolute;
-  font-size: 15px;
-  left: 100px;
-  color: #972fa7;
-  top: 70px;
-  text-align: justify;
 }
