@@ -52,12 +52,16 @@ function showWeather(response) {
   console.log(response.data);
   let temperature = Math.round(response.data.main.temp);
   let currentTemperature = document.querySelector("#temp");
-  currentTemperature.innerHTML = `${temperature}`;
-  let city = response.data.name;
+    currentTemperature.innerHTML = `${temperature}`;
+  
   let currentCity = document.querySelector("#city-names");
   currentCity.innerHTML = `${city}`;
   let weather = document.querySelector("#weather-icon");
   weather.innerHTML = response.data.weather[0].description;
+  let humidity = document.querySelector("#humidity");
+  humidity.innerHTML = response.data.main.humidity;
+  let wind = document.querySelector("#wind");
+  wind.innerHTML = Math.round(response.data.wind.speed);
 }
 
 function retrievePosition(position) {
@@ -71,9 +75,6 @@ function retrievePosition(position) {
 function getCurrentPosition() {
   navigator.geolocation.getCurrentPosition(retrievePosition);
 }
-
-let newIcon = document.querySelector("#get-location");
-newIcon.addEventListener("click", getCurrentPosition);
 
 // function newFarenheit(event) {
 //event.preventDefault();
