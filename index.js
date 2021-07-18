@@ -81,12 +81,16 @@ function getCurrentPosition() {
  function farenheitTemp(event) {
 event.preventDefault();
 let temperatureValue = document.querySelector("#temp");
+celsius.classList.remove("active");
+farenheit.classList.add("active");
 let farenheitTemperature =(celsiusTemperature*9)/5+32;
 temperatureValue.innerHTML = Math.round(farenheitTemperature);
 }
 
 function celsiusTemp(event) {
 event.preventDefault();
+celsius.classList.add("active");
+farenheit.classList.remove("active");
 let temperatureValue = document.querySelector("#temp");
 temperatureValue.innerHTML = Math.round(celsiusTemperature);
 }
