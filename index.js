@@ -108,36 +108,32 @@ function showWeather(response) {
 getForecast(response.data.coord);
 }
 
-function search(event) {
+function handleSearch(event) {
   event.preventDefault();
   let cityInput = document.querySelector("#city-input");
+  search (cityInput.value);
   let h1 = document.querySelector("h1");
   if (cityInput.value) {
-    h1.innerHTML = `${cityInput.value}`;
+  h1.innerHTML = `${cityInput.value}`;
   } else {
-    h1.innerHTML = null;
     alert("please type a city");
+  }  
   }
-  let city = `${cityInput.value}`;
-}
+
 function search(city) {
   let apiKey = "3f6747337fbf92c2a1849a4d1e77403b";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(showWeather);
 }
 
+
 let form = document.querySelector("#search-city");
-form.addEventListener("submit", search);
+form.addEventListener("submit", handleSearch);
 
 search ("Kutchan");
 
 
-
-
-
-
-
- function farenheitTemp(event) {
+function farenheitTemp(event) {
 event.preventDefault();
 let temperatureValue = document.querySelector("#temp");
 celsius.classList.remove("active");
