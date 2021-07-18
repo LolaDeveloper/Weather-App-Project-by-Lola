@@ -52,8 +52,8 @@ function showWeather(response) {
   console.log(response.data);
   let temperature = Math.round(response.data.main.temp);
   let currentTemperature = document.querySelector("#temp");
-    currentTemperature.innerHTML = `${temperature}`;
-  
+  currentTemperature.innerHTML = `${temperature}`;
+  let city = response.data.name;
   let currentCity = document.querySelector("#city-names");
   currentCity.innerHTML = `${city}`;
   let weather = document.querySelector("#weather-icon");
