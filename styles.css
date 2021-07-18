@@ -36,7 +36,7 @@ li {
 }
 
 .weather-app {
-  border: 2px solid #857488;
+  border: 1px solid #857488;
   padding: 20px;
   border-radius: 10px;
   background-color: #dcdbfe;
@@ -67,6 +67,12 @@ button.btn-secondary:focus {
 .weather-icon {
   color: black;
   font-size: 18px;
+}
+
+.weather-temperature img {
+  margin-right: 5px;
+  height: 66px;
+  width: 66px;
 }
 
 .temp {
