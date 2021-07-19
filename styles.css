@@ -39,7 +39,7 @@ li {
   border: 1px solid #857488;
   padding: 20px;
   border-radius: 10px;
-  background-color: light blue;
+  background-color: light pink;
 }
 
 button.btn-secondary {
@@ -71,8 +71,8 @@ button.btn-secondary:focus {
 
 .weather-temperature img {
   margin-right: 5px;
-  height: 66px;
-  width: 66px;
+  height: 68px;
+  width: 68px;
 }
 
 .temp {
