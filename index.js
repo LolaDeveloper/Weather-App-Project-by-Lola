@@ -29,7 +29,7 @@ let days = [
   "Saturday",
 ];
 let today = days[now.getDay()];
-return ` ${today} ${hours}:${minutes}`;
+return ` Last Updated: ${today} ${hours}:${minutes}`;
 }
 
 function formatDay(timestamp){
