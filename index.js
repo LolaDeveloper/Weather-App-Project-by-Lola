@@ -93,7 +93,7 @@ function showWeather(response) {
   let iconElement = document.querySelector("#icon");
   
   celsiusTemperature=response.data.main.temp;
-
+  
   currentTemperature.innerHTML = Math.round(celsiusTemperature);
   currentCity.innerHTML = `${city}`;
   weather.innerHTML = response.data.weather[0].description; 

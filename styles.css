@@ -1,11 +1,14 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #fffff5;
-  background-image: url("wheel.gif");
+  background-color: #f6f6f6;
+  background-image: url("the-water-bearer.png");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center top;
 }
 
 h1 {
-  color: gray;
+  color: #121130;
   font-weight: 100;
   margin-bottom: 0;
   font-size: 30px;
@@ -27,14 +30,8 @@ li {
   line-height: 19px;
 }
 
-.glyphs {
-  display: block;
-  position: relative;
-  left: 200px;
-}
-
 .greeting {
-  color: #972fa7;
+  color: #121130;
   font-weight: bold;
 }
 
@@ -51,7 +48,7 @@ li {
 }
 
 button.btn-secondary {
-  background: #972fa7;
+  background: #121130;
   border-color: gray;
 }
 
