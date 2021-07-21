@@ -1,5 +1,7 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
+  background-color: #fffff5;
+  background-image: url("wheel.gif");
 }
 
 h1 {
@@ -23,6 +25,12 @@ li {
   font-size: 16px;
   font-weight: 200;
   line-height: 19px;
+}
+
+.glyphs {
+  display: block;
+  position: relative;
+  left: 200px;
 }
 
 .greeting {
