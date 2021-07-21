@@ -1,7 +1,7 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #f6f6f6;
-  background-image: url("the-water-bearer.png");
+  background-color: #fffdd0;
+  background-image: url("aquarius-water.png");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center top;
@@ -63,9 +63,8 @@ button.btn-secondary:focus {
 
 .units {
   position: relative;
-  font-size: smaller;
+  font-size: 16px;
   font-weight: bold;
-  font-size: 14px;
   top: -34px;
 }
 
@@ -76,8 +75,8 @@ button.btn-secondary:focus {
 
 .weather-temperature img {
   margin-right: 5px;
-  height: 68px;
-  width: 68px;
+  height: 64px;
+  width: 64px;
 }
 
 .temp {
