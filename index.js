@@ -158,3 +158,9 @@ farenheit.addEventListener("click", farenheitTemp);
 
 let celsius = document.querySelector("#celsius-link");
 celsius.addEventListener("click", celsiusTemp);
+
+
+
+
+	
+  

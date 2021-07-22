@@ -29,7 +29,10 @@ li {
   font-weight: 200;
   line-height: 19px;
 }
-
+small {
+  color: #121130;
+  font-weight: bold;
+}
 .greeting {
   color: #121130;
   font-weight: bold;
