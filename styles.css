@@ -106,7 +106,9 @@ a {
   h1 {
     background-color: #fdfbce;
   }
-
+  .weather-temperature img {
+    margin-right: 10px;
+  }
   .units {
     font-size: 15px;
   }
