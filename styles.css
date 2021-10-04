@@ -1,7 +1,7 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #fffdd0;
-  background-image: url("aquarius-water.png");
+  background-image: url("/images/aquarius-water.png");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center top;
@@ -100,4 +100,14 @@ a {
 
 .weather-temperature .active:hover {
   text-decoration: none;
+}
+
+@media (max-width: 960px) {
+  h1 {
+    background-color: #fdfbce;
+  }
+
+  .units {
+    font-size: 15px;
+  }
 }
