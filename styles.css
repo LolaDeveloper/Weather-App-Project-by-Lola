@@ -106,11 +106,14 @@ a {
   h1 {
     background-color: #fdfbce;
   }
+  .weather-app {
+    background-color: #fdfbce;
+  }
   .temp {
     font-size: 55px;
   }
   .weather-temperature img {
-    margin-right: 30px;
+    margin-right: 50px;
   }
   .units {
     font-size: 12px;
